@@ -10,6 +10,13 @@ type Enc struct {
 	off *uint64
 }
 
+func MakeEncFromSlice(b []byte) Enc {
+	return Enc{
+		b:   b,
+		off: new(uint64),
+	}
+}
+
 func NewEnc(sz uint64) Enc {
 	return Enc{
 		b:   make([]byte, sz),
