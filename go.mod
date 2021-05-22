@@ -1,4 +1,4 @@
-module github.com/tchajed/marshal
+module github.com/jtassarotti/marshal
 
 go 1.12
 
